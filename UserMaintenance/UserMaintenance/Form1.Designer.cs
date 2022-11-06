@@ -89,13 +89,13 @@
             // 
             // btnWrite
             // 
-            this.btnWrite.Location = new System.Drawing.Point(345, 98);
+            this.btnWrite.Location = new System.Drawing.Point(345, 99);
             this.btnWrite.Name = "btnWrite";
             this.btnWrite.Size = new System.Drawing.Size(100, 23);
-            this.btnWrite.TabIndex = 3;
+            this.btnWrite.TabIndex = 4;
             this.btnWrite.Text = "button2";
             this.btnWrite.UseVisualStyleBackColor = true;
-            this.btnWrite.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnWrite.Click += new System.EventHandler(this.btnWrite_Click);
             // 
             // Form1
             // 

@@ -41,5 +41,10 @@ namespace UserMaintenance
             };
             users.Add(u);
         }
+
+        private void btnWrite_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+        }
     }
 }
