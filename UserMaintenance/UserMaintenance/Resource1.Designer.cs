@@ -70,7 +70,7 @@ namespace UserMaintenance {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Utónév.
+        ///   Looks up a localized string similar to Keresztnév.
         /// </summary>
         internal static string FirstName {
             get {
@@ -90,9 +90,9 @@ namespace UserMaintenance {
         /// <summary>
         ///   Looks up a localized string similar to Fáljba Írás.
         /// </summary>
-        internal static string Write {
+        internal static string Save {
             get {
-                return ResourceManager.GetString("Write", resourceCulture);
+                return ResourceManager.GetString("Save", resourceCulture);
             }
         }
     }
