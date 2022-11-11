@@ -49,6 +49,7 @@ namespace UserMaintenance
         private void btnSave_Click(object sender, EventArgs e)
         {
             var SaveFileDialog = new SaveFileDialog();
+            //SaveFileDialog.Filter = "*.txt";
 
             if (SaveFileDialog.ShowDialog() == DialogResult.OK)
             {
