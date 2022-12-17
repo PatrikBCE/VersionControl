@@ -18,6 +18,7 @@ namespace UserMaintenance
         List<Tick> ticks;
         PortfolioEntities context = new PortfolioEntities();
         List<PortfolioItem> portfolio = new List<PortfolioItem>();
+        List<decimal> Nyereségek = new List<decimal>();
         public Form1()
         {
             InitializeComponent();
@@ -28,7 +29,7 @@ namespace UserMaintenance
 
             CreatePortfolio();
 
-            List<decimal> Nyereségek = new List<decimal>();
+
             int intervalum = 30;
             DateTime kezdőDátum = (from x in ticks select x.TradingDay).Min();
             DateTime záróDátum = new DateTime(2016, 12, 30);
@@ -47,6 +48,11 @@ namespace UserMaintenance
                                         .ToList();
             //MessageBox.Show(nyereségekRendezve[nyereségekRendezve.Count() / 5].ToString());
 
+            //Save();
+        }
+
+        private void Save()
+        {
             SaveFileDialog sfv = new SaveFileDialog();
             sfv.ShowDialog();
             using (StreamWriter sw = new StreamWriter(sfv.FileName))
@@ -87,6 +93,11 @@ namespace UserMaintenance
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Mentés_Click(object sender, EventArgs e)
+        {
+            Save();
         }
     }
 }
