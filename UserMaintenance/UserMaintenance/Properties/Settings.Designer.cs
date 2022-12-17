@@ -22,5 +22,16 @@ namespace UserMaintenance.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=bit.uni-corvinus.hu;Initial Catalog=Portfolio;Persist Security Info=T" +
+            "rue;User ID=hallgato;Password=Password123")]
+        public string PortfolioConnectionString {
+            get {
+                return ((string)(this["PortfolioConnectionString"]));
+            }
+        }
     }
 }
